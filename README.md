@@ -1,6 +1,6 @@
 # 💰 AWS Billing Alert Notification Setup
 
-This project provides infrastructure-as-code using **Terraform** and **CloudFormation** to monitor your AWS billing. You’ll receive an **email alert** when your **monthly AWS charges exceed $200**.
+This project provides infrastructure-as-code using **Terraform** and **CloudFormation** to monitor AWS billing. receive an **email alert** when **monthly AWS charges exceed $200**.
 
 ---
 
@@ -94,7 +94,7 @@ Creates:
 ```bash
 cd terraform
 terraform init
-terraform apply -var="email_address=you@example.com"
+terraform apply -var="email_address=test@example.com"
 ```
 
 📧 **Confirm the subscription via email to receive alerts.**
@@ -112,7 +112,7 @@ Sets up the same resources via CloudFormation.
 1. Go to AWS CloudFormation
 2. Click **Create Stack > With new resources**
 3. Upload `billing-alert.yaml`
-4. Update `you@example.com` in the file with your actual email
+4. Update `test@example.com` in the file with actual email
 5. Follow the stack creation process
 
 #### 🔧 Setup via CLI
